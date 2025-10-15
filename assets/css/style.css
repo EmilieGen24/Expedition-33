@@ -9,13 +9,15 @@
 
 body{
     font-family: "Cinzel Regular", sans-serif;
-    background-color: black;
+    background-color: rgb(18, 19, 19);
     color: white;
 }
-
+h2{
+    color: burlywood;
+}
 /* HEADER */
 
-ul{
+.menu{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -23,9 +25,12 @@ ul{
     list-style: none;
 }
 
-a{
+.menu a{
     text-decoration: none;
     color: white;
+}
+.menu a:hover{
+    text-decoration: underline;
 }
 
 /* MAIN - BANNER */
@@ -37,22 +42,21 @@ a{
     height: 30vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .banner img{
     width: 20%;
-    
 }
 
-/* MAIN - CYCLe */
+/* MAIN - CYCLE */
 
 .cycle{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-items:center;
+    justify-content: center;
     margin: 30px 200px 20px 200px;
 }
 .cycle h1{
@@ -61,29 +65,113 @@ a{
     margin-bottom: 0;
 }
 .cycle h2{
-    color: burlywood;
     margin-top: 5px;
 }
 .cycle a{
     background-color: rgb(224, 188, 80);
     color: black;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 25px 5px 25px;
     font-weight: 700;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.cycle a:hover{
+    background: radial-gradient(gold,rgb(99, 82, 8));
 }
 
 /* MAIN - CARD-CONTAINER */
-
+.titre-card{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
 .card-container{
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-evenly;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .card-container .card{
     width: 30%;
-
+    padding-bottom: 10%;
+    background-color: rgb(32, 34, 40);
+    border-radius: 10px;
+    border: 1px solid rgb(56, 56, 55);
 }
 
 .card img{
     width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-text{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* MAIN - NEWS*/
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(32, 34, 40);
+    margin-top: 30px;
+    border: 1px solid rgb(56, 56, 55);
+}
+
+.news .btn{
+    background-color: rgb(224, 188, 80);
+    color: black;
+    padding: 10px 20px 10px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+
+}
+.news .btn:hover{
+    background: radial-gradient(gold,rgb(99, 82, 8));
+}
+
+
+.text-form{
+    background-color: rgb(18, 19, 19);
+    color: rgb(224, 188, 80);
+    padding: 10px 150px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(56, 56, 55);
+    margin-bottom: 30px;
+}
+.text-form:hover{
+    box-shadow: 2px 2px 2px rgb(224, 188, 80);
+}
+
+/* FOOTER */
+.footer{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;  
+   
+}
+.menu-footer{
+    list-style: none;
+    margin-right: 100px;
+    display: flex;
+    align-items: flex-end;
+    gap: 100px;   
+
+}
+.footer img{
+    width: 20%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}   
+
+.menu-footer a{
+    text-decoration: none;
+    color: white; 
+}
+.menu-footer li{
+    width: 30%;
 }
