@@ -2,3 +2,88 @@
     font-family: "Cinzel Regular";
     src: url(../fonts/Cinzel/static/Cinzel-Regular.ttf);
 }
+@font-face {
+    font-family: "Cinzel Bold";
+    src: url(../fonts/Cinzel/static/Cinzel-Bold.ttf);
+}
+
+body{
+    font-family: "Cinzel Regular", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* HEADER */
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN - BANNER */
+
+.banner{
+    background-image: url(../img/banner.jpg);
+    background-position:center;
+    background-size: cover ;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner img{
+    width: 20%;
+    
+}
+
+/* MAIN - CYCLe */
+
+.cycle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 30px 200px 20px 200px;
+}
+.cycle h1{
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.cycle h2{
+    color: burlywood;
+    margin-top: 5px;
+}
+.cycle a{
+    background-color: rgb(224, 188, 80);
+    color: black;
+    padding: 5px 20px 5px 20px;
+    font-weight: 700;
+}
+
+/* MAIN - CARD-CONTAINER */
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card-container .card{
+    width: 30%;
+
+}
+
+.card img{
+    width: 100%;
+}
